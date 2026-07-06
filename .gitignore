@@ -1,0 +1,12 @@
+# Visual Studio workspace
+.vs/
+
+# Build folders
+bin/
+obj/
+
+# Test results
+*.trx
+
+# Local environment file (secrets)
+.env

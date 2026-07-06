@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Zigwheels")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a96e26f3d42bda5d99a0b80895fce1291da506d3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Zigwheels")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Zigwheels")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

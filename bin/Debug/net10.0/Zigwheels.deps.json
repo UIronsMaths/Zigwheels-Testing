@@ -8,12 +8,113 @@
     ".NETCoreApp,Version=v10.0": {
       "Zigwheels/1.0.0": {
         "dependencies": {
+          "Allure.NUnit": "2.15.0",
+          "Allure.Net.Commons": "2.15.0",
+          "Allure.Reqnroll": "2.15.0",
+          "Microsoft.Extensions.Configuration": "10.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "10.0.0",
+          "Microsoft.Extensions.Configuration.EnvironmentVariables": "10.0.0",
           "Microsoft.NET.Test.Sdk": "17.14.0",
           "NUnit": "4.3.2",
-          "NUnit3TestAdapter": "5.0.0"
+          "NUnit3TestAdapter": "5.0.0",
+          "Selenium.Support": "4.40.0",
+          "Selenium.WebDriver": "4.40.0"
         },
         "runtime": {
           "Zigwheels.dll": {}
+        }
+      },
+      "Allure.Net.Commons/2.15.0": {
+        "dependencies": {
+          "AspectInjector": "2.8.1",
+          "MimeTypesMap": "1.0.9",
+          "Newtonsoft.Json": "13.0.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Allure.Net.Commons.dll": {
+            "assemblyVersion": "2.15.0.0",
+            "fileVersion": "2.15.0.0"
+          }
+        }
+      },
+      "Allure.NUnit/2.15.0": {
+        "dependencies": {
+          "Allure.Net.Commons": "2.15.0",
+          "NUnit": "4.3.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Allure.NUnit.dll": {
+            "assemblyVersion": "2.15.0.0",
+            "fileVersion": "2.15.0.0"
+          }
+        }
+      },
+      "Allure.Reqnroll/2.15.0": {
+        "dependencies": {
+          "Allure.Net.Commons": "2.15.0",
+          "CsvHelper": "33.1.0",
+          "Reqnroll": "3.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Allure.ReqnrollPlugin.dll": {
+            "assemblyVersion": "2.15.0.0",
+            "fileVersion": "2.15.0.0"
+          }
+        }
+      },
+      "AspectInjector/2.8.1": {
+        "runtime": {
+          "lib/netstandard2.0/AspectInjector.Broker.dll": {
+            "assemblyVersion": "2.8.1.0",
+            "fileVersion": "2.8.1.0"
+          }
+        }
+      },
+      "CsvHelper/33.1.0": {
+        "runtime": {
+          "lib/net9.0/CsvHelper.dll": {
+            "assemblyVersion": "33.0.0.0",
+            "fileVersion": "33.1.0.26"
+          }
+        }
+      },
+      "Cucumber.CucumberExpressions/17.1.0": {
+        "runtime": {
+          "lib/netstandard2.0/CucumberExpressions.dll": {
+            "assemblyVersion": "17.1.0.0",
+            "fileVersion": "17.1.0.0"
+          }
+        }
+      },
+      "Cucumber.HtmlFormatter/21.14.0": {
+        "dependencies": {
+          "Cucumber.Messages": "28.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Cucumber.HtmlFormatter.dll": {
+            "assemblyVersion": "21.14.0.0",
+            "fileVersion": "21.14.0.0"
+          }
+        }
+      },
+      "Cucumber.Messages/28.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/Cucumber.Messages.dll": {
+            "assemblyVersion": "28.0.0.0",
+            "fileVersion": "28.0.0.0"
+          }
+        }
+      },
+      "Gherkin/34.0.0": {
+        "dependencies": {
+          "Cucumber.Messages": "28.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Gherkin.dll": {
+            "assemblyVersion": "34.0.0.0",
+            "fileVersion": "34.0.0.0"
+          }
         }
       },
       "Microsoft.ApplicationInsights/2.22.0": {
@@ -24,11 +125,82 @@
           }
         }
       },
+      "Microsoft.Bcl.AsyncInterfaces/9.0.6": {
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "assemblyVersion": "9.0.0.6",
+            "fileVersion": "9.0.625.26613"
+          }
+        }
+      },
       "Microsoft.CodeCoverage/17.14.0": {
         "runtime": {
           "lib/net8.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
             "assemblyVersion": "15.0.0.0",
             "fileVersion": "17.1400.225.12603"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration/10.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Primitives": "10.0.0"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Configuration.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.52411"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/10.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "10.0.0"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.52411"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Binder/10.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "10.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.52411"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.EnvironmentVariables/10.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "10.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.0"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.52411"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyModel/8.0.2": {
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyModel.dll": {
+            "assemblyVersion": "8.0.0.2",
+            "fileVersion": "8.0.1024.46610"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/10.0.0": {
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.25.52411"
           }
         }
       },
@@ -358,7 +530,7 @@
       "Microsoft.TestPlatform.TestHost/17.14.0": {
         "dependencies": {
           "Microsoft.TestPlatform.ObjectModel": "17.14.0",
-          "Newtonsoft.Json": "13.0.3"
+          "Newtonsoft.Json": "13.0.4"
         },
         "runtime": {
           "lib/net8.0/Microsoft.TestPlatform.CommunicationUtilities.dll": {
@@ -502,11 +674,19 @@
           }
         }
       },
-      "Newtonsoft.Json/13.0.3": {
+      "MimeTypesMap/1.0.9": {
+        "runtime": {
+          "lib/netstandard2.0/MimeTypesMap.dll": {
+            "assemblyVersion": "1.0.9.0",
+            "fileVersion": "1.0.9.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.4": {
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "13.0.0.0",
-            "fileVersion": "13.0.3.27908"
+            "fileVersion": "13.0.4.30916"
           }
         }
       },
@@ -527,6 +707,62 @@
           "Microsoft.Testing.Extensions.VSTestBridge": "1.5.3",
           "Microsoft.Testing.Platform.MSBuild": "1.5.3"
         }
+      },
+      "Reqnroll/3.0.3": {
+        "dependencies": {
+          "Cucumber.CucumberExpressions": "17.1.0",
+          "Cucumber.HtmlFormatter": "21.14.0",
+          "Cucumber.Messages": "28.0.0",
+          "Gherkin": "34.0.0",
+          "Microsoft.Bcl.AsyncInterfaces": "9.0.6",
+          "Microsoft.Extensions.DependencyModel": "8.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Reqnroll.Utils.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          },
+          "lib/netstandard2.0/Reqnroll.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
+      "Selenium.Support/4.40.0": {
+        "dependencies": {
+          "Selenium.WebDriver": "4.40.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.40.0": {
+        "runtime": {
+          "lib/net8.0/WebDriver.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux/native/selenium-manager": {
+            "rid": "linux",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx/native/selenium-manager": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win/native/selenium-manager.exe": {
+            "rid": "win",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
       }
     }
   },
@@ -536,6 +772,69 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Allure.Net.Commons/2.15.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CbEuYafbLehdc5ncB2zY84mqvjZMiseFOgm4VNYV61lxQfPc7yj5GIrq2QjYi1yVbYDzELEnmm+miTl8984WDw==",
+      "path": "allure.net.commons/2.15.0",
+      "hashPath": "allure.net.commons.2.15.0.nupkg.sha512"
+    },
+    "Allure.NUnit/2.15.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qALmHBrEtrcyYP/QFPIGSIYoYeIb5XoVkXwDNFg23s9iLLuPQ7PHbTBwKL6d07oXtF0b5dU7VBUb4vRK/LeiAg==",
+      "path": "allure.nunit/2.15.0",
+      "hashPath": "allure.nunit.2.15.0.nupkg.sha512"
+    },
+    "Allure.Reqnroll/2.15.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JKd4Y1wWJtswFpLubP+yxblgsSufJV2o1nveJV4ooVXRjbLpc0ea8wD7E61H+eoQWNwItQIVdWYLMJsMV7jhqg==",
+      "path": "allure.reqnroll/2.15.0",
+      "hashPath": "allure.reqnroll.2.15.0.nupkg.sha512"
+    },
+    "AspectInjector/2.8.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8BScDeaLazJVFaa2Tt9hoWLhllnxXP3Sew+l/vktdZEcgoPOsqhlDqe6GXJvy7xVkdICAbKFsrcDJ0cfrDR6Mg==",
+      "path": "aspectinjector/2.8.1",
+      "hashPath": "aspectinjector.2.8.1.nupkg.sha512"
+    },
+    "CsvHelper/33.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kqfTOZGrn7NarNeXgjh86JcpTHUoeQDMB8t9NVa/ZtlSYiV1rxfRnQ49WaJsob4AiGrbK0XDzpyKkBwai4F8eg==",
+      "path": "csvhelper/33.1.0",
+      "hashPath": "csvhelper.33.1.0.nupkg.sha512"
+    },
+    "Cucumber.CucumberExpressions/17.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IZFDLLwrUCKuGDXQzmAWZa+kQFpVmVwWD8wEl0UWGOR83UQfzqg8hZeSSNUOXlW0Kh3vMO6kEm3FpNC4amKMaw==",
+      "path": "cucumber.cucumberexpressions/17.1.0",
+      "hashPath": "cucumber.cucumberexpressions.17.1.0.nupkg.sha512"
+    },
+    "Cucumber.HtmlFormatter/21.14.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pkGsMqbLoLXk6nTYQqFqtWRov8bkVpQKwZRj31Q1xd9m+1ClyHA2rZtVMh4ecakujU62ksTh48qCbw9xi1E+Wg==",
+      "path": "cucumber.htmlformatter/21.14.0",
+      "hashPath": "cucumber.htmlformatter.21.14.0.nupkg.sha512"
+    },
+    "Cucumber.Messages/28.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Kthb+tAd8sKlbBrtxMRI6j8lU8cn/MzbDAPfXuHFTfK2dc6z7777SZV7rnEUrXHisw3l3U5gXRB3BG24B6lwKw==",
+      "path": "cucumber.messages/28.0.0",
+      "hashPath": "cucumber.messages.28.0.0.nupkg.sha512"
+    },
+    "Gherkin/34.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-C7S8aXKI65TfDpwVBkQlRbrqjj4Bv/Qf5CdZPrSJnfdUU9CZZtpLrovuR31iVMR8Oe2XEkdhacHnDUMBNipu/w==",
+      "path": "gherkin/34.0.0",
+      "hashPath": "gherkin.34.0.0.nupkg.sha512"
+    },
     "Microsoft.ApplicationInsights/2.22.0": {
       "type": "package",
       "serviceable": true,
@@ -543,12 +842,61 @@
       "path": "microsoft.applicationinsights/2.22.0",
       "hashPath": "microsoft.applicationinsights.2.22.0.nupkg.sha512"
     },
+    "Microsoft.Bcl.AsyncInterfaces/9.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-82rLw487j5jBXEi2r3WvA/cagOhcRREVRtet6izzjDMY+i392W5oNSN2KCtuIvlTpyMONEUD0MIlGAgDdsvQ/w==",
+      "path": "microsoft.bcl.asyncinterfaces/9.0.6",
+      "hashPath": "microsoft.bcl.asyncinterfaces.9.0.6.nupkg.sha512"
+    },
     "Microsoft.CodeCoverage/17.14.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-z2GYXGG6LjGoumT59xSB2dMnqSwQBjkxdDJmSJHwy5nPtZ435GXa6wj5hz/lRrAZ7NyXXxZNXVsiHXzHRru5eA==",
       "path": "microsoft.codecoverage/17.14.0",
       "hashPath": "microsoft.codecoverage.17.14.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration/10.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-H4SWETCh/cC5L1WtWchHR6LntGk3rDTTznZMssr4cL8IbDmMWBxY+MOGDc/ASnqNolLKPIWHWeuC1ddiL/iNPw==",
+      "path": "microsoft.extensions.configuration/10.0.0",
+      "hashPath": "microsoft.extensions.configuration.10.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/10.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-d2kDKnCsJvY7mBVhcjPSp9BkJk48DsaHPg5u+Oy4f8XaOqnEedRy/USyvnpHL92wpJ6DrTPy7htppUUzskbCXQ==",
+      "path": "microsoft.extensions.configuration.abstractions/10.0.0",
+      "hashPath": "microsoft.extensions.configuration.abstractions.10.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Binder/10.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tMF9wNh+hlyYDWB8mrFCQHQmWHlRosol1b/N2Jrefy1bFLnuTlgSYmPyHNmz8xVQgs7DpXytBRWxGhG+mSTp0g==",
+      "path": "microsoft.extensions.configuration.binder/10.0.0",
+      "hashPath": "microsoft.extensions.configuration.binder.10.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.EnvironmentVariables/10.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TmFegsI/uCdwMBD4yKpmO+OkjVNHQL49Dh/ep83NI5rPUEoBK9OdsJo1zURc1A2FuS/R/Pos3wsTjlyLnguBLA==",
+      "path": "microsoft.extensions.configuration.environmentvariables/10.0.0",
+      "hashPath": "microsoft.extensions.configuration.environmentvariables.10.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyModel/8.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mUBDZZRgZrSyFOsJ2qJJ9fXfqd/kXJwf3AiDoqLD9m6TjY5OO/vLNOb9fb4juC0487eq4hcGN/M2Rh/CKS7QYw==",
+      "path": "microsoft.extensions.dependencymodel/8.0.2",
+      "hashPath": "microsoft.extensions.dependencymodel.8.0.2.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/10.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-inRnbpCS0nwO/RuoZIAqxQUuyjaknOOnCEZB55KSMMjRhl0RQDttSmLSGsUJN3RQ3ocf5NDLFd2mOQViHqMK5w==",
+      "path": "microsoft.extensions.primitives/10.0.0",
+      "hashPath": "microsoft.extensions.primitives.10.0.0.nupkg.sha512"
     },
     "Microsoft.NET.Test.Sdk/17.14.0": {
       "type": "package",
@@ -606,12 +954,19 @@
       "path": "microsoft.testplatform.testhost/17.14.0",
       "hashPath": "microsoft.testplatform.testhost.17.14.0.nupkg.sha512"
     },
-    "Newtonsoft.Json/13.0.3": {
+    "MimeTypesMap/1.0.9": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
-      "path": "newtonsoft.json/13.0.3",
-      "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
+      "sha512": "sha512-M0TuSCwL1a8QV0VKw8ysY4AIs6v/Aor3N7GXQeqgNlAvqjx9Kj9KxNd09Pg5RzpY1tCOU8mkrfYBi1Lxwj8quQ==",
+      "path": "mimetypesmap/1.0.9",
+      "hashPath": "mimetypesmap.1.0.9.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pdgNNMai3zv51W5aq268sujXUyx7SNdE2bj1wZcWjAQrKMFZV260lbqYop1d2GM67JI1huLRwxo9ZqnfF/lC6A==",
+      "path": "newtonsoft.json/13.0.4",
+      "hashPath": "newtonsoft.json.13.0.4.nupkg.sha512"
     },
     "NUnit/4.3.2": {
       "type": "package",
@@ -626,6 +981,27 @@
       "sha512": "sha512-sy4cLoUAdE6TDM4wNX5gmNCyhMev5wUz4cA6ZRf/aON9vf9t4xTVGLj/4huhDKcS4dFfmVVcgcP70yC7WC9kKg==",
       "path": "nunit3testadapter/5.0.0",
       "hashPath": "nunit3testadapter.5.0.0.nupkg.sha512"
+    },
+    "Reqnroll/3.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-k6s0L8giVATYUDU9PPRxAtfKeoWjbIwCUnp5XyDwib0stdA6dNIQgj/Uf6v2e+OdFjvrr7gsZJXWrNtCg/GQ3A==",
+      "path": "reqnroll/3.0.3",
+      "hashPath": "reqnroll.3.0.3.nupkg.sha512"
+    },
+    "Selenium.Support/4.40.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YgHe6g5h7JIUuECo+a+WEhW1UtaUmQxoY383RWvWtzkiMSEEaRc3LXL3mG6pt4IjtwaN/h1QCzpQ1CFO2hT1qA==",
+      "path": "selenium.support/4.40.0",
+      "hashPath": "selenium.support.4.40.0.nupkg.sha512"
+    },
+    "Selenium.WebDriver/4.40.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-y7ESRFracAgUjQEieM42gPdkUEPvffrwmu5XZ4scGCjZ20nJKaJ+qcULegO01g4Chl5+IpVe61mdzXwPM91ddg==",
+      "path": "selenium.webdriver/4.40.0",
+      "hashPath": "selenium.webdriver.4.40.0.nupkg.sha512"
     }
   }
 }

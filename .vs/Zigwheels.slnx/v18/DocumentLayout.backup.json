@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E9E0A6A0-1A73-4653-832C-499791FC487F}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E9E0A6A0-1A73-4653-832C-499791FC487F}|Zigwheels.csproj|solutionrelative:unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\tests\\upcomingbiketests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|solutionrelative:tests\\upcomingbiketests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\core\\drivercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|solutionrelative:core\\drivercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\pages\\upcomingbikes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|solutionrelative:pages\\upcomingbikes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\pages\\basepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|solutionrelative:pages\\basepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\tests\\basetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|solutionrelative:tests\\basetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\core\\driverfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|solutionrelative:core\\driverfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\bikeinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|solutionrelative:bikeinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +42,109 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": ".env",
+              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\.env",
+              "RelativeDocumentMoniker": ".env",
+              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\.env",
+              "RelativeToolTip": ".env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-07-03T08:27:19.013Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DriverContext.cs",
+              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Core\\DriverContext.cs",
+              "RelativeDocumentMoniker": "Core\\DriverContext.cs",
+              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Core\\DriverContext.cs",
+              "RelativeToolTip": "Core\\DriverContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-06T15:56:51.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DriverFactory.cs",
+              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Core\\DriverFactory.cs",
+              "RelativeDocumentMoniker": "Core\\DriverFactory.cs",
+              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Core\\DriverFactory.cs",
+              "RelativeToolTip": "Core\\DriverFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-06T09:32:45.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "UnitTest1.cs",
-              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\UnitTest1.cs",
-              "RelativeToolTip": "UnitTest1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
+              "Title": "UpcomingBikeTests.cs",
+              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Tests\\UpcomingBikeTests.cs",
+              "RelativeDocumentMoniker": "Tests\\UpcomingBikeTests.cs",
+              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Tests\\UpcomingBikeTests.cs",
+              "RelativeToolTip": "Tests\\UpcomingBikeTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-06T08:37:27.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BaseTests.cs",
+              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Tests\\BaseTests.cs",
+              "RelativeDocumentMoniker": "Tests\\BaseTests.cs",
+              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Tests\\BaseTests.cs",
+              "RelativeToolTip": "Tests\\BaseTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-06T08:37:23.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UpcomingBikes.cs",
+              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Pages\\UpcomingBikes.cs",
+              "RelativeDocumentMoniker": "Pages\\UpcomingBikes.cs",
+              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Pages\\UpcomingBikes.cs",
+              "RelativeToolTip": "Pages\\UpcomingBikes.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAwEoAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-06T08:37:01.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BasePage.cs",
+              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Pages\\BasePage.cs",
+              "RelativeDocumentMoniker": "Pages\\BasePage.cs",
+              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Pages\\BasePage.cs",
+              "RelativeToolTip": "Pages\\BasePage.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-06T08:37:16.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BikeInfo.cs",
+              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\BikeInfo.cs",
+              "RelativeDocumentMoniker": "BikeInfo.cs",
+              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\BikeInfo.cs",
+              "RelativeToolTip": "BikeInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-03T08:15:33.642Z",
               "EditorCaption": ""
