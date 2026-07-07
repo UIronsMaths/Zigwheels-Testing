@@ -30,18 +30,25 @@ public abstract class BasePage
     {
         Driver.Navigate().GoToUrl(url);
 
-        // Handles cookie consent popups specific to Zigwheels, iff present. This is a best-effort approach; if the popup isn't present, it won't throw an exception.
-        var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(3));
+        
+        // Handles cookie consent popups specific to Zigwheels, iff present. This is a best-effort approach
+        // We poll briefly and move on if the popup isn't present, it won't throw an exception unless WebDriverWait.Until() throws on a null result like in prior implementations.
+        var deadline = DateTime.UtcNow.AddSeconds(5);
+        IWebElement? button = null;
 
-        var button = wait.Until(d =>
-            d.FindElements(By.CssSelector("button.fc-cta-consent"))
-             .FirstOrDefault());
+        while(DateTime.UtcNow < deadline)
+        {
+            button = Driver.FindElements(By.CssSelector("button.fc-cta-consent")).FirstOrDefault();
+            if (button != null) break;
+            Thread.Sleep(250); // Poll every 250ms
+        }
 
         if (button != null)
         {
             ((IJavaScriptExecutor)Driver)
                 .ExecuteScript("arguments[0].click();", button);
         }
+        
     }
 
     public string GetPageTitle() => Driver.Title;

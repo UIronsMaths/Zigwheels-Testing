@@ -26,6 +26,12 @@ public static class DriverFactory
         // Don't wait for full onload (ads/analytics can keep the page "loading" indefinitely)
         options.PageLoadStrategy = PageLoadStrategy.Eager;
 
+        // --- COOKIE POPUP SUPPRESSION ---
+        options.AddArgument("--w3c-cookie-consent");
+        options.AddArgument("--disable-cookie-consent");
+        options.AddUserProfilePreference("profile.default_content_setting_values.cookies", 1); // 1 = Allow all cookies to be saved normally
+        options.AddArgument("--disable-cookies");
+
         // Performance optimizations
         options.AddArgument("--no-sandbox");
         options.AddArgument("--disable-dev-shm-usage");
@@ -67,6 +73,12 @@ public static class DriverFactory
         // Don't wait for full onload (ads/analytics can keep the page "loading" indefinitely)
         options.PageLoadStrategy = PageLoadStrategy.Eager;
 
+
+        // --- COOKIE POPUP SUPPRESSION ---
+        options.AddArgument("--w3c-cookie-consent");
+        options.AddArgument("--disable-cookie-consent");
+        options.AddUserProfilePreference("profile.default_content_setting_values.cookies", 1);
+
         // Performance optimizations
         options.AddArgument("--no-sandbox");
         options.AddArgument("--disable-dev-shm-usage");
@@ -83,6 +95,11 @@ public static class DriverFactory
 
         // Don't wait for full onload (ads/analytics can keep the page "loading" indefinitely)
         options.PageLoadStrategy = PageLoadStrategy.Eager;
+
+        // --- COOKIE POPUP SUPPRESSION (Firefox Built-in Feature) ---
+        // 1 = Reject all cookies, 2 = Accept all cookies (when a banner attempts to force a choice)
+        options.SetPreference("cookiebanners.service.mode", 2);
+        options.SetPreference("cookiebanners.service.mode.privateBrowsing", 2);
 
         // Performance optimizations
         options.SetPreference("dom.max_script_run_time", 30);
