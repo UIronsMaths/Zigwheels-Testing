@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Zigwheels")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6c14c6959645a1753acd8c89198d2ffa8a42cb1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e2f90cb8b154b7b3f5c450443ccd292ecfd3784")]
 [assembly: System.Reflection.AssemblyProductAttribute("Zigwheels")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Zigwheels")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

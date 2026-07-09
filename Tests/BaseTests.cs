@@ -39,14 +39,6 @@ public abstract class BaseTest
 
         DriverContext.SetDriver(driver);
 
-        // 1. Navigate to the target domain briefly
-        //driver.Navigate().GoToUrl("https://zigwheels.com");
-
-        // 2. Inject the cookie that the website looks for to skip the popup
-        // (You can find the exact Name/Value pairs using your browser DevTools from step 1)
-        //driver.Manage().Cookies.AddCookie(new Cookie("cookie_consent_accepted", "true"));
-        //driver.Manage().Cookies.AddCookie(new Cookie("euconsent-v2", "true"));
-
         // TODO: create per-test report entry once reporting exists
     }
 

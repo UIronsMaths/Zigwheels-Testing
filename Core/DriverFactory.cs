@@ -29,7 +29,6 @@ public static class DriverFactory
         // --- COOKIE POPUP SUPPRESSION ---
         options.AddArgument("--w3c-cookie-consent");
         options.AddArgument("--disable-cookie-consent");
-        options.AddUserProfilePreference("profile.default_content_setting_values.cookies", 1); // 1 = Allow all cookies to be saved normally
         options.AddArgument("--disable-cookies");
 
         // Performance optimizations
