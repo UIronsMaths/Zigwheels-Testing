@@ -5,7 +5,14 @@ using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Remote;
 public static class DriverFactory
 {
-    private static readonly Uri GridHubUri = new Uri("http://localhost:4444/wd/hub");
+    // Locally, the Grid hub runs on the same machine you're testing from, so
+    // "localhost" is correct. In GitLab CI with a docker:dind service, the
+    // Grid containers run inside a *sibling* container -- "localhost" from
+    // the job container's perspective is the job container itself, not
+    // where the hub is actually listening. Set SELENIUM_GRID_URL in CI
+    // (e.g. http://docker:4444/wd/hub) to point at the dind service instead.
+    private static readonly Uri GridHubUri = new Uri(
+        Environment.GetEnvironmentVariable("SELENIUM_GRID_URL") ?? "http://localhost:4444/wd/hub");
 
     public static IWebDriver Create(string browser, bool headless)
     {
@@ -29,6 +36,7 @@ public static class DriverFactory
         // --- COOKIE POPUP SUPPRESSION ---
         options.AddArgument("--w3c-cookie-consent");
         options.AddArgument("--disable-cookie-consent");
+        options.AddUserProfilePreference("profile.default_content_setting_values.cookies", 1); // 1 = Allow all cookies to be saved normally
         options.AddArgument("--disable-cookies");
 
         // Performance optimizations

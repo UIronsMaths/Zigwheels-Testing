@@ -1,12 +1,44 @@
-# Visual Studio workspace
-.vs/
-
-# Build folders
+## .NET build output
 bin/
 obj/
+out/
 
-# Test results
+## Test results
+TestResults/
+results.xml
 *.trx
 
-# Local environment file (secrets)
+## Visual Studio
+.vs/
+*.user
+*.suo
+
+## Rider
+.idea/
+*.sln.iml
+
+## VS Code
+.vscode/
+
+## NuGet
+*.nupkg
+**/packages/*
+!**/packages/build/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Selenium / test artifacts
+screenshots/
+*.log
+
+## OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+## Local-only config/secrets
+appsettings.local.json
+appsettings.*.local.json
 .env
+.env.local

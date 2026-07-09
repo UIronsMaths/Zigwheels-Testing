@@ -1,0 +1,78 @@
+stages:
+  - test
+
+variables:
+  # Talk to the docker-in-docker service over plain TCP rather than TLS --
+  # simplest option for an ephemeral CI job; not something you'd do for a
+  # long-lived host.
+  DOCKER_HOST: tcp://docker:2375
+  DOCKER_TLS_CERTDIR: ""
+
+  # The dind service is reachable at hostname "docker" from the job
+  # container -- NOT "localhost". Published container ports (4444, 7900-7902)
+  # land there. See the comment in DriverFactory.cs for why this matters.
+  SELENIUM_GRID_URL: "http://docker:4444/wd/hub"
+
+e2e-tests:
+  stage: test
+  image: mcr.microsoft.com/dotnet/sdk:8.0
+  services:
+    - docker:24.0-dind
+
+  before_script:
+    # Install the Docker CLI + Compose v2 plugin from Docker's official repo,
+    # so `docker compose` syntax matches exactly what you run locally (the
+    # Debian-packaged docker.io/docker-compose split into two separate,
+    # older, incompatible tools -- this avoids that mismatch).
+    - apt-get update -qq
+    - apt-get install -y -qq ca-certificates curl gnupg jq
+    - install -m 0755 -d /etc/apt/keyrings
+    - curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc
+    - chmod a+r /etc/apt/keyrings/docker.asc
+    - echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian $(. /etc/os-release && echo $VERSION_CODENAME) stable" > /etc/apt/sources.list.d/docker.list
+    - apt-get update -qq
+    - apt-get install -y -qq docker-ce-cli docker-compose-plugin
+
+  script:
+    - echo "Starting Selenium Grid..."
+    - docker compose up -d
+
+    # Same readiness check as run-tests.ps1, ported to bash since this job
+    # runs on a Linux image -- poll the hub's own status endpoint rather
+    # than assuming `docker compose up -d` returning means the nodes have
+    # actually registered.
+    - |
+      EXPECTED_NODES=3
+      TIMEOUT=180
+      DEADLINE=$(( $(date +%s) + TIMEOUT ))
+      READY=false
+
+      while [ "$(date +%s)" -lt "$DEADLINE" ]; do
+        STATUS=$(curl -s http://docker:4444/wd/hub/status || echo '{}')
+        ALL_READY=$(echo "$STATUS" | jq -r '.value.ready // false')
+        NODE_COUNT=$(echo "$STATUS" | jq -r '.value.nodes | length // 0')
+
+        echo "  hub ready=$ALL_READY, nodes registered=$NODE_COUNT/$EXPECTED_NODES"
+
+        if [ "$ALL_READY" = "true" ] && [ "$NODE_COUNT" -ge "$EXPECTED_NODES" ]; then
+          READY=true
+          break
+        fi
+        sleep 2
+      done
+
+      if [ "$READY" != "true" ]; then
+        echo "Grid did not become ready within ${TIMEOUT}s"
+        exit 1
+      fi
+
+    - echo "Grid is ready. Running tests..."
+    - dotnet test --logger "junit;LogFilePath=results.xml"
+
+  after_script:
+    - docker compose down
+
+  artifacts:
+    when: always
+    reports:
+      junit: "**/results.xml"

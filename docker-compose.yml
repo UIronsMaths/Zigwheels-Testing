@@ -15,7 +15,7 @@ services:
     depends_on:
       - selenium-hub
     deploy:
-      replicas: 2
+      replicas: 1
     ports:
       - "7900:7900"
     environment:
@@ -31,7 +31,7 @@ services:
     depends_on:
       - selenium-hub
     deploy:
-      replicas: 2
+      replicas: 1
     ports:
       - "7901:7900"
     environment:
@@ -47,7 +47,7 @@ services:
     depends_on:
       - selenium-hub
     deploy:
-      replicas: 2
+      replicas: 1
     ports:
       - "7902:7900"
     environment:
