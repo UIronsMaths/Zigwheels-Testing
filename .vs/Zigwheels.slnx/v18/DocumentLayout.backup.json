@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\pages\\basepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|solutionrelative:pages\\basepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,18 +27,6 @@
       "RelativeMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\core\\driverfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|solutionrelative:core\\driverfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\core\\drivercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|solutionrelative:core\\drivercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\bikeinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|solutionrelative:bikeinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -50,7 +42,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": ".env",
               "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\.env",
               "RelativeDocumentMoniker": ".env",
@@ -63,7 +55,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "BasePage.cs",
+              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Pages\\BasePage.cs",
+              "RelativeDocumentMoniker": "Pages\\BasePage.cs",
+              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Pages\\BasePage.cs",
+              "RelativeToolTip": "Pages\\BasePage.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAA2wGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-07T13:20:12.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-07-06T18:30:54.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "BaseTests.cs",
               "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Tests\\BaseTests.cs",
               "RelativeDocumentMoniker": "Tests\\BaseTests.cs",
@@ -75,44 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BasePage.cs",
-              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Pages\\BasePage.cs",
-              "RelativeDocumentMoniker": "Pages\\BasePage.cs",
-              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Pages\\BasePage.cs",
-              "RelativeToolTip": "Pages\\BasePage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-07T13:20:12.683Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DriverContext.cs",
-              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Core\\DriverContext.cs",
-              "RelativeDocumentMoniker": "Core\\DriverContext.cs",
-              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Core\\DriverContext.cs",
-              "RelativeToolTip": "Core\\DriverContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-06T15:56:51.399Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DriverFactory.cs",
-              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Core\\DriverFactory.cs",
-              "RelativeDocumentMoniker": "Core\\DriverFactory.cs",
-              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Core\\DriverFactory.cs",
-              "RelativeToolTip": "Core\\DriverFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-06T09:32:45.531Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "UpcomingBikeTests.cs",
               "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Tests\\UpcomingBikeTests.cs",
               "RelativeDocumentMoniker": "Tests\\UpcomingBikeTests.cs",
@@ -124,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UpcomingBikes.cs",
               "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Pages\\UpcomingBikes.cs",
               "RelativeDocumentMoniker": "Pages\\UpcomingBikes.cs",
@@ -136,19 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "docker-compose.yml",
-              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\docker-compose.yml",
-              "RelativeDocumentMoniker": "docker-compose.yml",
-              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\docker-compose.yml",
-              "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-07-06T18:30:54.233Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "BikeInfo.cs",
               "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\BikeInfo.cs",
               "RelativeDocumentMoniker": "BikeInfo.cs",
