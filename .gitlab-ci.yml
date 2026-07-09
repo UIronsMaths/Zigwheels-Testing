@@ -15,7 +15,7 @@ variables:
 
 e2e-tests:
   stage: test
-  image: mcr.microsoft.com/dotnet/sdk:8.0
+  image: mcr.microsoft.com/dotnet/sdk:10.0
   services:
     - docker:24.0-dind
 
@@ -74,5 +74,8 @@ e2e-tests:
 
   artifacts:
     when: always
+    expire_in: 7 days
+    paths:
+      - results.xml
     reports:
       junit: "**/results.xml"
