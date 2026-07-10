@@ -32,6 +32,7 @@ e2e-tests:
     - echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/$(. /etc/os-release && echo $ID) $(. /etc/os-release && echo $VERSION_CODENAME) stable" > /etc/apt/sources.list.d/docker.list
     - apt-get update -qq
     - apt-get install -y -qq docker-ce-cli docker-compose-plugin
+    - cp "$ENV_FILE" .env
 
   script:
     - echo "Starting Selenium Grid..."
