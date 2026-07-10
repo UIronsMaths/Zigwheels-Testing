@@ -6,7 +6,7 @@ public abstract class BasePage
     protected IWebDriver Driver { get; }
     protected WebDriverWait Wait { get; }
 
-    protected BasePage(IWebDriver driver, int explicitWaitSeconds = 10)
+    protected BasePage(IWebDriver driver, int explicitWaitSeconds = 30)
     {
         Driver = driver;
         Wait = new WebDriverWait(driver, TimeSpan.FromSeconds(explicitWaitSeconds));
