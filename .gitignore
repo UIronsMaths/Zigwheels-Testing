@@ -29,6 +29,7 @@ project.fragment.lock.json
 artifacts/
 
 ## Selenium / test artifacts
+TestResults/
 screenshots/
 *.log
 

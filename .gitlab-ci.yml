@@ -13,6 +13,13 @@ variables:
   # land there. See the comment in DriverFactory.cs for why this matters.
   SELENIUM_GRID_URL: "http://docker:4444/wd/hub"
 
+  # Directory.GetCurrentDirectory() inside `dotnet test` resolves to the
+  # build output folder, not the repo root -- CI_PROJECT_DIR is GitLab's
+  # built-in variable that's always the repo root, so ExtentReportManager
+  # writes the report/screenshots there instead of somewhere inside bin/.
+  TEST_OUTPUT_ROOT: "$CI_PROJECT_DIR"
+
+
 e2e-tests:
   stage: test
   image: mcr.microsoft.com/dotnet/sdk:10.0
@@ -77,6 +84,8 @@ e2e-tests:
     when: always
     expire_in: 7 days
     paths:
+      - "TestResults/ExtentReport/"
+      - "screenshots/"
       - "**/results.xml"
     reports:
       junit: "**/results.xml"

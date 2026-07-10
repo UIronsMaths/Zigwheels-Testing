@@ -43,6 +43,14 @@ $vncPorts = [ordered]@{
     edge    = 7902
 }
 
+# Directory.GetCurrentDirectory() inside `dotnet test` resolves to the build
+# output folder (bin/Debug/net10.0/...), not wherever you ran this script
+# from -- those are two unrelated "current directory" concepts. Set this
+# explicitly so ExtentReportManager (C# side) and this script agree on the
+# exact same path instead of each guessing independently.
+$outputRoot = (Get-Location).Path
+$env:TEST_OUTPUT_ROOT = $outputRoot
+
 Write-Host "Starting Selenium Grid..."
 docker compose up -d
 if ($LASTEXITCODE -ne 0) {
@@ -128,6 +136,15 @@ elseif ($env:CI) {
 Write-Host "Grid is ready. Running tests..."
 dotnet test
 $testExitCode = $LASTEXITCODE
+
+$reportPath = Join-Path $outputRoot "TestResults\ExtentReport\index.html"
+if (-not $env:CI -and (Test-Path $reportPath)) {
+    Write-Host "Opening Extent report..."
+    Start-Process $reportPath
+}
+elseif ($env:CI) {
+    Write-Host "CI environment detected (`$env:CI is set) -- skipping report auto-open. See job artifacts instead."
+}
 
 Write-Host "Tearing down Selenium Grid..."
 docker compose down
