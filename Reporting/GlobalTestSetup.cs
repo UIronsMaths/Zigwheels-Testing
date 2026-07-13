@@ -28,7 +28,7 @@ public class GlobalTestSetup
 
     private static void ConfigureAllureResultsDirectory()
     {
-        var resultsDir = Path.Combine(ExtentReportManager.OutputRoot, "TestResults", "AllureReport");
+        var resultsDir = Path.Combine(ExtentReportManager.OutputRoot, "TestResults", "allure-results");
         if (Directory.Exists(resultsDir)) Directory.Delete(resultsDir, true);
         Directory.CreateDirectory(resultsDir);
 
