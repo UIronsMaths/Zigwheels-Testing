@@ -1,5 +1,7 @@
 stages:
   - test
+  - report
+  - deploy
 
 variables:
   # Talk to the docker-in-docker service over plain TCP rather than TLS --
@@ -19,18 +21,14 @@ variables:
   # writes the report/screenshots there instead of somewhere inside bin/.
   TEST_OUTPUT_ROOT: "$CI_PROJECT_DIR"
 
-
 e2e-tests:
   stage: test
   image: mcr.microsoft.com/dotnet/sdk:10.0
+
   services:
     - docker:24.0-dind
 
   before_script:
-    # Install the Docker CLI + Compose v2 plugin from Docker's official repo,
-    # so `docker compose` syntax matches exactly what you run locally (the
-    # Debian-packaged docker.io/docker-compose split into two separate,
-    # older, incompatible tools -- this avoids that mismatch).
     - apt-get update -qq
     - apt-get install -y -qq ca-certificates curl gnupg jq
     - install -m 0755 -d /etc/apt/keyrings
@@ -45,10 +43,6 @@ e2e-tests:
     - echo "Starting Selenium Grid..."
     - docker compose up -d
 
-    # Same readiness check as run-tests.ps1, ported to bash since this job
-    # runs on a Linux image -- poll the hub's own status endpoint rather
-    # than assuming `docker compose up -d` returning means the nodes have
-    # actually registered.
     - |
       EXPECTED_NODES=3
       TIMEOUT=180
@@ -60,12 +54,13 @@ e2e-tests:
         ALL_READY=$(echo "$STATUS" | jq -r '.value.ready // false')
         NODE_COUNT=$(echo "$STATUS" | jq -r '.value.nodes | length // 0')
 
-        echo "  hub ready=$ALL_READY, nodes registered=$NODE_COUNT/$EXPECTED_NODES"
+        echo "hub ready=$ALL_READY, nodes registered=$NODE_COUNT/$EXPECTED_NODES"
 
         if [ "$ALL_READY" = "true" ] && [ "$NODE_COUNT" -ge "$EXPECTED_NODES" ]; then
           READY=true
           break
         fi
+
         sleep 2
       done
 
@@ -84,9 +79,114 @@ e2e-tests:
     when: always
     expire_in: 7 days
     paths:
-      - "TestResults/ExtentReport/"
-      - "screenshots/"
-      - "TestResults/AllureReport/"
+      - TestResults/ExtentReport/
+      - TestResults/allure-results/
+      - screenshots/
       - "**/results.xml"
+
     reports:
       junit: "**/results.xml"
+
+allure-report:
+  stage: report
+  image: frankescobar/allure-docker-service
+
+  needs:
+    - job: e2e-tests
+      artifacts: true
+
+  script:
+    - allure generate TestResults/allure-results --clean -o TestResults/AllureReport
+
+  artifacts:
+    when: always
+    expire_in: 7 days
+
+    paths:
+      - TestResults/ExtentReport/
+      - TestResults/AllureReport/
+
+pages:
+  stage: deploy
+  image: alpine:latest
+
+  needs:
+    - job: allure-report
+      artifacts: true
+
+  script:
+    - mkdir -p public
+
+    - |
+      if [ -d TestResults/ExtentReport ]; then
+        mkdir -p public/extent
+        cp -r TestResults/ExtentReport/* public/extent/
+      fi
+
+    - |
+      if [ -d TestResults/AllureReport ]; then
+        mkdir -p public/allure
+        cp -r TestResults/AllureReport/* public/allure/
+      fi
+
+    - |
+      cat > public/index.html <<EOF
+      <!DOCTYPE html>
+      <html>
+      <head>
+          <meta charset="UTF-8">
+          <title>Automation Reports</title>
+
+          <style>
+              body{
+                  font-family:Arial,Helvetica,sans-serif;
+                  max-width:900px;
+                  margin:50px auto;
+                  background:#f5f5f5;
+              }
+
+              h1{
+                  color:#333;
+              }
+
+              a{
+                  display:block;
+                  margin:20px 0;
+                  padding:18px;
+                  background:white;
+                  border:1px solid #ddd;
+                  border-radius:8px;
+                  text-decoration:none;
+                  font-size:20px;
+                  color:#0056b3;
+              }
+
+              a:hover{
+                  background:#efefef;
+              }
+          </style>
+
+      </head>
+
+      <body>
+
+          <h1>Automation Test Reports</h1>
+
+          <a href="extent/index.html">
+              📊 Extent Report
+          </a>
+
+          <a href="allure/index.html">
+              📈 Allure Report
+          </a>
+
+      </body>
+      </html>
+      EOF
+
+  artifacts:
+    paths:
+      - public
+
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
