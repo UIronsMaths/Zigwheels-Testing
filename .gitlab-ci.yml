@@ -86,6 +86,7 @@ e2e-tests:
     paths:
       - "TestResults/ExtentReport/"
       - "screenshots/"
+      - "TestResults/AllureReport/"
       - "**/results.xml"
     reports:
       junit: "**/results.xml"

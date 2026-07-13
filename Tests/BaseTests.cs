@@ -1,7 +1,9 @@
+using Allure.Net.Commons;
+using Allure.NUnit;
+using AventStack.ExtentReports;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
-using AventStack.ExtentReports;
 using System;
 using System.IO;
 
@@ -9,6 +11,7 @@ using System.IO;
 [TestFixture("firefox")]
 [TestFixture("edge")]
 [Parallelizable(ParallelScope.Self)]
+[AllureNUnit]
 public abstract class BaseTest
 {
     protected IWebDriver Driver => DriverContext.Driver;
@@ -99,13 +102,14 @@ public abstract class BaseTest
     protected void Expect(string expected)
     {
         ExtentTest.Info($"Expected: {expected}");
+        AllureApi.Step($"Expected: {expected}");
     }
 
     // Helper for subclasses to log steps
     protected void LogStep(string description)
     {
-        Console.WriteLine($"[{TestName}] STEP: {description}");
         ExtentTest.Info(description);
+        AllureApi.Step(description);
     }
 
     private void TryAttachFailureScreenshot()
@@ -124,6 +128,7 @@ public abstract class BaseTest
             screenshot.SaveAsFile(path);
 
             ExtentTest.AddScreenCaptureFromPath(path);
+            AllureApi.AddAttachment("Failure screenshot", "image/png", path);
         }
         catch (Exception ex)
         {

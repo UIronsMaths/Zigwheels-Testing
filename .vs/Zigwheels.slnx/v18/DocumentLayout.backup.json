@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\reporting\\extentreportmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|solutionrelative:reporting\\extentreportmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\.gitlab-ci.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|solutionrelative:.gitlab-ci.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -42,7 +46,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": ".env",
               "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\.env",
               "RelativeDocumentMoniker": ".env",
@@ -51,25 +55,37 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-07-03T08:27:19.013Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ExtentReportManager.cs",
+              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Reporting\\ExtentReportManager.cs",
+              "RelativeDocumentMoniker": "Reporting\\ExtentReportManager.cs",
+              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Reporting\\ExtentReportManager.cs",
+              "RelativeToolTip": "Reporting\\ExtentReportManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T09:11:23.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": ".gitlab-ci.yml",
               "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\.gitlab-ci.yml",
               "RelativeDocumentMoniker": ".gitlab-ci.yml",
               "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\.gitlab-ci.yml",
               "RelativeToolTip": ".gitlab-ci.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAFAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
               "WhenOpened": "2026-07-09T20:59:03.894Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "BasePage.cs",
               "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Pages\\BasePage.cs",
               "RelativeDocumentMoniker": "Pages\\BasePage.cs",
@@ -77,12 +93,11 @@
               "RelativeToolTip": "Pages\\BasePage.cs",
               "ViewState": "AgIAAKAAAAAAAAAAAAAmwGMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-07T13:20:12.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-07T13:20:12.683Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
@@ -90,12 +105,11 @@
               "RelativeToolTip": "docker-compose.yml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-07-06T18:30:54.233Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-06T18:30:54.233Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "UpcomingBikeTests.cs",
               "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Tests\\UpcomingBikeTests.cs",
               "RelativeDocumentMoniker": "Tests\\UpcomingBikeTests.cs",
@@ -103,12 +117,11 @@
               "RelativeToolTip": "Tests\\UpcomingBikeTests.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAYwAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-06T08:37:27.087Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-06T08:37:27.087Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UpcomingBikes.cs",
               "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Pages\\UpcomingBikes.cs",
               "RelativeDocumentMoniker": "Pages\\UpcomingBikes.cs",
@@ -116,12 +129,11 @@
               "RelativeToolTip": "Pages\\UpcomingBikes.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-06T08:37:01.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-06T08:37:01.029Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "BikeInfo.cs",
               "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\BikeInfo.cs",
               "RelativeDocumentMoniker": "BikeInfo.cs",
@@ -129,8 +141,7 @@
               "RelativeToolTip": "BikeInfo.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAqwA0AAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-03T08:15:33.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-03T08:15:33.642Z"
             }
           ]
         }

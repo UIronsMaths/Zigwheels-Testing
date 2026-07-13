@@ -146,6 +146,14 @@ elseif ($env:CI) {
     Write-Host "CI environment detected (`$env:CI is set) -- skipping report auto-open. See job artifacts instead."
 }
 
+$allureResultsPath = Join-Path $outputRoot "TestResults\AllureReport"
+if (Test-Path $allureResultsPath) {
+    Write-Host "Allure raw results written to: $allureResultsPath"
+    Write-Host "View them locally with the Allure commandline tool (not auto-launched -- it's a separate install):"
+    Write-Host "  allure serve `"$allureResultsPath`""
+}
+
+
 Write-Host "Tearing down Selenium Grid..."
 docker compose down
 

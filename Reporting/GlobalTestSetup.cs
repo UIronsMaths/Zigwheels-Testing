@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System.Text.Json;
 
 /// <summary>
 /// Runs exactly once before any test in the assembly, and exactly once after
@@ -16,6 +17,7 @@ public class GlobalTestSetup
     {
         // Touching .Extent triggers lazy initialisation.
         _ = ExtentReportManager.Extent;
+        ConfigureAllureResultsDirectory();
     }
 
     [OneTimeTearDown]
@@ -23,4 +25,18 @@ public class GlobalTestSetup
     {
         ExtentReportManager.Flush();
     }
+
+    private static void ConfigureAllureResultsDirectory()
+    {
+        var resultsDir = Path.Combine(ExtentReportManager.OutputRoot, "TestResults", "AllureReport");
+        if (Directory.Exists(resultsDir)) Directory.Delete(resultsDir, true);
+        Directory.CreateDirectory(resultsDir);
+
+        var configPath = Path.Combine(Path.GetTempPath(), $"allureConfig_{Guid.NewGuid():N}.json");
+        var json = JsonSerializer.Serialize(new { allure = new { directory = resultsDir } });
+        File.WriteAllText(configPath, json);
+
+        Environment.SetEnvironmentVariable("ALLURE_CONFIG", configPath);
+    }
+
 }

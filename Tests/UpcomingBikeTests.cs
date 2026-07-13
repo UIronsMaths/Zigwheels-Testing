@@ -22,18 +22,21 @@ public class UpcomingHondaBikesTests : BaseTest
     [Test]
     public void UpcomingHondaBikes_Under_2Lakh_AreReturned()
     {
+        LogStep("Navigating to upcoming Honda Bikes page");
         _page.NavigateToUpcomingBikesByBrand("honda");
-        //_page.ClickViewMoreIfPresent();
 
+        LogStep("Getting the page listing");
         var allHondaBikes = _page.GetListedBikes();
         Assert.That(allHondaBikes, Is.Not.Empty, "Expected at least one upcoming Honda bike to be listed.");
 
+        LogStep("Filtering results by max price of 2 Lakh");
         var maxPriceLakhs = 2.0m;
         var affordable = _page.FilterByMaxPriceLakhs(allHondaBikes, maxPriceLakhs);
 
         Assert.That(affordable, Is.Not.Empty, "Expected at least one Honda bike under the price threshold.");
         Assert.That(affordable.All(b => b.PriceInLakhs <= maxPriceLakhs), Is.True);
 
+        LogStep("Logging all bikes meeting the criteria");
         foreach (var bike in affordable)
             TestContext.WriteLine(bike.ToString());
     }
@@ -41,9 +44,13 @@ public class UpcomingHondaBikesTests : BaseTest
     [Test]
     public void UpcomingHondaBikes_PriceRange_1To3Lakh()
     {
+        LogStep("Navigating to upcoming Honda Bikes page");
         _page.NavigateToUpcomingBikesByBrand("honda");
 
+        LogStep("Getting the page listing");
         var allHondaBikes = _page.GetListedBikes();
+
+        LogStep("Filtering results by specified price range");
         var midRange = _page.FilterByPriceRangeLakhs(allHondaBikes, minLakhs: 1.0m, maxLakhs: 3.0m);
 
         Assert.That(midRange, Is.Not.Empty);
