@@ -6,6 +6,7 @@ public abstract class BasePage
     protected IWebDriver Driver { get; }
     protected WebDriverWait Wait { get; }
 
+    // TODO: Explicit wait times to be configurable
     protected BasePage(IWebDriver driver, int explicitWaitSeconds = 30)
     {
         Driver = driver;
