@@ -81,6 +81,7 @@ e2e-tests:
     paths:
       - TestResults/ExtentReport/
       - TestResults/allure-results/
+      - TestResults/PerformanceMetrics.csv
       - screenshots/
       - "**/results.xml"
 
@@ -105,6 +106,7 @@ allure-report:
     paths:
       - TestResults/ExtentReport/
       - TestResults/AllureReport/
+      - TestResults/PerformanceMetrics.csv
 
 pages:
   stage: deploy
@@ -127,6 +129,11 @@ pages:
       if [ -d TestResults/AllureReport ]; then
         mkdir -p public/allure
         cp -r TestResults/AllureReport/* public/allure/
+      fi
+
+    - |
+      if [ -f TestResults/PerformanceMetrics.csv ]; then
+        cp TestResults/PerformanceMetrics.csv public/
       fi
 
     - |
@@ -170,7 +177,9 @@ pages:
 
       <body>
 
-          <h1>Automation Test Reports</h1>
+          <h1>Zigwheels Automated Test Reports</h1>
+
+          <h2>Presented as part of Ulfric's Capstone Project</h2>
 
           <a href="extent/index.html">
               📊 Extent Report
@@ -178,6 +187,10 @@ pages:
 
           <a href="allure/index.html">
               📈 Allure Report
+          </a>
+
+          <a href="PerformanceMetrics.csv" download>
+              📉 Performance Metrics (CSV)
           </a>
 
       </body>

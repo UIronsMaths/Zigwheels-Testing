@@ -6,6 +6,7 @@ using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
 using System;
 using System.IO;
+using Zigwheels.Utilities;
 
 [TestFixture("chrome")]
 [TestFixture("firefox")]
@@ -80,7 +81,10 @@ public abstract class BaseTest
         try
         {
             if (DriverContext.IsInitialised)
+            {
+                PerformanceManager.CaptureAndReport(Driver, ExtentTest, _browser, status);
                 DriverContext.QuitDriver();
+            }
         }
         catch (Exception ex)
         {

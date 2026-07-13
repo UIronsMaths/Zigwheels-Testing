@@ -3,24 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\pages\\basepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|solutionrelative:pages\\basepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\performancemetrics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|solutionrelative:performancemetrics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\tests\\basetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|solutionrelative:tests\\basetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\reporting\\extentreportmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|solutionrelative:reporting\\extentreportmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\tests\\upcomingbiketests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|solutionrelative:tests\\upcomingbiketests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Tests\\AccessibilityTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\.gitlab-ci.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|solutionrelative:.gitlab-ci.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\tests\\basetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|solutionrelative:tests\\basetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{816A7E29-7C29-B7C7-78CF-DE53480EF289}|Zigwheels.csproj|c:\\users\\450 g8\\documents\\projects\\zigwheels testing\\zigwheels\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -46,7 +41,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": ".env",
               "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\.env",
               "RelativeDocumentMoniker": ".env",
@@ -55,56 +50,44 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-07-03T08:27:19.013Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BasePage.cs",
-              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Pages\\BasePage.cs",
-              "RelativeDocumentMoniker": "Pages\\BasePage.cs",
-              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Pages\\BasePage.cs",
-              "RelativeToolTip": "Pages\\BasePage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABFAAAAAAAAAA==",
+              "Title": "PerformanceMetrics.cs",
+              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\PerformanceMetrics.cs",
+              "RelativeDocumentMoniker": "PerformanceMetrics.cs",
+              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\PerformanceMetrics.cs",
+              "RelativeToolTip": "PerformanceMetrics.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAQwCAAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-07T13:20:12.683Z",
+              "WhenOpened": "2026-07-13T14:48:40.378Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BaseTests.cs",
-              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Tests\\BaseTests.cs",
-              "RelativeDocumentMoniker": "Tests\\BaseTests.cs",
-              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Tests\\BaseTests.cs",
-              "RelativeToolTip": "Tests\\BaseTests.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Title": "AccessibilityTests.cs",
+              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Tests\\AccessibilityTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\New Selenium Framework\\Selenium-Automated-Framework\\Tests\\AccessibilityTests.cs",
+              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\New Selenium Framework\\Selenium-Automated-Framework\\Tests\\AccessibilityTests.cs",
+              "RelativeToolTip": "..\\..\\New Selenium Framework\\Selenium-Automated-Framework\\Tests\\AccessibilityTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T09:37:08.956Z",
+              "WhenOpened": "2026-07-13T15:36:29.549Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ExtentReportManager.cs",
-              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Reporting\\ExtentReportManager.cs",
-              "RelativeDocumentMoniker": "Reporting\\ExtentReportManager.cs",
-              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Reporting\\ExtentReportManager.cs",
-              "RelativeToolTip": "Reporting\\ExtentReportManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T09:36:14.123Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": ".gitlab-ci.yml",
               "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\.gitlab-ci.yml",
               "RelativeDocumentMoniker": ".gitlab-ci.yml",
               "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\.gitlab-ci.yml",
               "RelativeToolTip": ".gitlab-ci.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAAAMEAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
               "WhenOpened": "2026-07-09T20:59:03.894Z",
               "EditorCaption": ""
@@ -112,19 +95,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UpcomingBikeTests.cs",
-              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Tests\\UpcomingBikeTests.cs",
-              "RelativeDocumentMoniker": "Tests\\UpcomingBikeTests.cs",
-              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Tests\\UpcomingBikeTests.cs",
-              "RelativeToolTip": "Tests\\UpcomingBikeTests.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwAMAAAAAAAAAAAAAAA==",
+              "Title": "BaseTests.cs",
+              "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Tests\\BaseTests.cs",
+              "RelativeDocumentMoniker": "Tests\\BaseTests.cs",
+              "ToolTip": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\Tests\\BaseTests.cs",
+              "RelativeToolTip": "Tests\\BaseTests.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-06T08:37:27.087Z",
+              "WhenOpened": "2026-07-13T14:56:17.571Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
@@ -136,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "BikeInfo.cs",
               "DocumentMoniker": "C:\\Users\\450 G8\\Documents\\Projects\\Zigwheels Testing\\Zigwheels\\BikeInfo.cs",
               "RelativeDocumentMoniker": "BikeInfo.cs",

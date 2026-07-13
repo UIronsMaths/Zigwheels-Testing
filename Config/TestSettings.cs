@@ -2,7 +2,7 @@
 {
     public string BaseUrl { get; set; } = string.Empty;
     public bool HeadlessMode { get; set; } = false;
-    public int ExplicitWaitSeconds { get; set; } = 10;
+    public int ExplicitWaitSeconds { get; set; } = 30;
     public int PageLoadTimeoutSeconds { get; set; } = 60;
     public string ReportType { get; set; } = string.Empty;
     public string TargetBrand { get; set; } = string.Empty;

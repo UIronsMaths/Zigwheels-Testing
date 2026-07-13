@@ -6,11 +6,12 @@ public abstract class BasePage
     protected IWebDriver Driver { get; }
     protected WebDriverWait Wait { get; }
 
-    // TODO: Explicit wait times to be configurable
     protected BasePage(IWebDriver driver, int explicitWaitSeconds = 30)
     {
         Driver = driver;
-        Wait = new WebDriverWait(driver, TimeSpan.FromSeconds(explicitWaitSeconds));
+        var timeout = Environment.GetEnvironmentVariable("CI") == "true" ? TimeSpan.FromSeconds(60) : TimeSpan.FromSeconds(30);
+
+        Wait = new WebDriverWait(driver, timeout);
         PreAcceptCookieConsent();
     }
 
